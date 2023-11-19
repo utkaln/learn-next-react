@@ -16,12 +16,17 @@ const pageList = [
 export default function Home() {
   return (
     <div className={styles.center}>
-      <div className={styles.card}>Hello World from Next !</div>
-      <ul>
+      <div className={styles.main}>
+        <h1 className="text-3xl font-bold">Hello World from Next !</h1>
+      </div>
+
+      <ul className="isolate ...">
         {pageList.map((page) => (
-          <li>
-            <Link href={page.id}>{page.name}</Link>
-          </li>
+          <div className={styles.card}>
+            <li id={page.id} className="py-4 flex">
+              <Link href={page.id}>{page.name}</Link>
+            </li>
+          </div>
         ))}
       </ul>
     </div>

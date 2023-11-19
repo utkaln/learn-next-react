@@ -4,8 +4,10 @@ import Link from "next/link";
 export default function PageNotFound() {
   return (
     <div className={styles.center}>
-      <div className={styles.card}>Page Not Foubd</div>
-      <Link href="/">Home</Link>
+      <div className={styles.card}>Page Not Found !! </div>
+      <div className={styles.card}>
+        <Link href="/">Visit Home</Link>
+      </div>
     </div>
   );
 }
